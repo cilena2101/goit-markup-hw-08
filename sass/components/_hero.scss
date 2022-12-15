@@ -1,0 +1,95 @@
+.hero {
+	display: flex;
+	padding: 0;
+}
+
+.hero-container {
+	padding: 118px 60px;
+
+	text-align: center;
+
+	border: 1px solid #000000;
+	background-image: var(--gradient),
+		url(../images/hero-bg-mob.jpg);
+
+	background-color: #2f303a;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	@include retina {
+		background-image: var(--gradient),
+			url(../images/hero-bg-mob-2x.jpg);
+	}
+
+	@include mobile {
+		background-image: var(--gradient),
+			url(../images/hero-bg-tab.jpg);
+
+	@include retina {
+			background-image: var(--gradient),
+				url(../images/hero-bg-tab-2x.jpg);
+		}
+	}
+	@include tablet {
+		padding: 118px 204px;
+
+		background-image: var(--gradient),
+			url(../images/hero-bg-desktop.jpg);
+
+	@include retina {
+			background-image: var(--gradient),
+				url(../../images/hero-bg-desktop-2x.jpg);
+		}
+	}
+
+	@include desktop {
+		max-width: 1600px;
+		padding-top: 200px;
+		padding-bottom: 200px;
+	}
+
+	outline: 1px solid tomato;
+}
+
+.hero-title {
+	margin: 0 0 30px 0;
+
+	color: var(--second-color);
+
+	font-weight: 900;
+	font-size: 26px;
+	line-height: 1.61;
+
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+
+	@include desktop {
+		font-size: 44px;
+		line-height: 1.36;
+
+	}
+}
+
+.hero-btn {
+	min-width: 216px;
+	height: 50px;
+
+	color: var(--second-color);
+	background-color: var(--accent-color);
+	border-color: var(--accent-color);
+	border-radius: 4px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+
+	align-items: center;
+	letter-spacing: 0.06em;
+
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	cursor: pointer;
+}

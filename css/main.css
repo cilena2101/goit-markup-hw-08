@@ -259,7 +259,7 @@ img {
   z-index: 1;
   width: 100vw;
   height: 100vh;
-  padding: 48px 15px 48px 40px;
+  padding: 10px 15px 48px 40px;
   background-color: var(--second-color);
 }
 .mob-menu > .container {
@@ -275,6 +275,10 @@ img {
   .mob-menu {
     display: none;
   }
+}
+
+.menu-list {
+  margin-top: 48px;
 }
 
 .menu-list__item .link {

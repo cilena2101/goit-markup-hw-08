@@ -16,9 +16,9 @@
 	z-index: 1;
 	width: 100vw;
 	height: 100vh;
-	padding: 48px 15px 48px 40px;
+	padding: 10px 15px 48px 40px;
 
-	background-color: var(--second-color);	
+	background-color: var(--second-color);
 
 	>.container {
 		height: 100%;
@@ -29,15 +29,15 @@
 
 		padding-left: 0;
 		padding-right: 0;
-	}	
-	
+	}
+
 	@include tablet {
 		display: none;
 	}
-
-	// @include  {
-	// 	max-width: 480px;
-	// }
+	
+	}
+.menu-list {
+	margin-top: 48px;
 }
 
 .menu-list__item .link {

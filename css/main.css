@@ -278,7 +278,7 @@ img {
 }
 
 .menu-list {
-  margin-top: 48px;
+  margin-top: 38px;
 }
 
 .menu-list__item .link {
@@ -357,6 +357,7 @@ img {
 }
 
 .mob-soc__item {
+  display: block;
   position: relative;
   font-weight: 500;
   font-size: 18px;
@@ -365,11 +366,10 @@ img {
   color: var(--accent-color);
 }
 
-.mob-soc__item::after {
+.mob-soc__item:not(:last-child)::after {
   content: "";
   margin-left: 10px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  transform: rotate(90deg);
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 body {

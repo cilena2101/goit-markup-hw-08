@@ -12,17 +12,13 @@
 .mob-menu {
 	position: fixed;
 	top: 0;
-	transform: translateX(-15px);
+	left: 0;
 	z-index: 1;
 	width: 100vw;
 	height: 100vh;
-	
-	padding-top: 48px;
-	padding-bottom: 48px;
-	padding-left: 40px;
-	padding-right: 15px;
+	padding: 48px 15px 48px 40px;
 
-	background-color: var(--second-color);
+	background-color: var(--second-color);	
 
 	>.container {
 		height: 100%;
@@ -30,15 +26,18 @@
 		flex-direction: column;
 		justify-content: space-between;
 		overflow: auto;
+
+		padding-left: 0;
+		padding-right: 0;
 	}	
 	
 	@include tablet {
 		display: none;
 	}
 
-	@media screen and (min-width: 480px) {
-		max-width: 480px;
-	}
+	// @include  {
+	// 	max-width: 480px;
+	// }
 }
 
 .menu-list__item .link {

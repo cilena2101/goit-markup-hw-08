@@ -255,14 +255,11 @@ img {
 .mob-menu {
   position: fixed;
   top: 0;
-  transform: translateX(-15px);
+  left: 0;
   z-index: 1;
   width: 100vw;
   height: 100vh;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  padding-left: 40px;
-  padding-right: 15px;
+  padding: 48px 15px 48px 40px;
   background-color: var(--second-color);
 }
 .mob-menu > .container {
@@ -271,15 +268,12 @@ img {
   flex-direction: column;
   justify-content: space-between;
   overflow: auto;
+  padding-left: 0;
+  padding-right: 0;
 }
 @media screen and (min-width: 768px) {
   .mob-menu {
     display: none;
-  }
-}
-@media screen and (min-width: 480px) {
-  .mob-menu {
-    max-width: 480px;
   }
 }
 
@@ -390,6 +384,7 @@ body {
 }
 
 .hero-container {
+  max-width: 1600px;
   padding: 118px 60px;
   text-align: center;
   border: 1px solid #000000;
@@ -398,7 +393,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  outline: 1px solid tomato;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-container {
@@ -423,7 +417,7 @@ body {
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero-container {
-    background-image: var(--gradient), url(../../images/hero-bg-desktop-2x.jpg);
+    background-image: var(--gradient), url(../images/hero-bg-desktop-2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
